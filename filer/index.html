@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sykkelmafiaen - filer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* lora-700italic - latin */
+        @font-face {
+            font-family: 'Lora';
+            font-style: italic;
+            font-weight: 700;
+            src: local(''),
+            url('/fonts/lora-v23-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/lora-v23-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+        /* open-sans-regular - latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local(''),
+            url('/fonts/open-sans-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/open-sans-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+        /* open-sans-800 - latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            src: local(''),
+            url('/fonts/open-sans-v28-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/open-sans-v28-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background: #ffffff;
+            color: #000000;
+            border-top: 20px solid #000000;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            font-style: italic;
+            margin: 0.5rem 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p a {
+            color: #000000;
+            font-weight: bold;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        p a::before {
+            content: "";
+            background-color: #000000;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            z-index: -1;
+            transition: height 0.3s ease-in-out;
+        }
+
+        p a:hover {
+            color: #ffffff;
+        }
+
+        p a:hover::before {
+            height: 100%;
+        }
+
+        .wrapper {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img.preview {
+            max-width: 150px;
+        }
+
+        header {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        header > span {
+            font-size: 30px;
+        }
+
+        .files {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .file {
+            min-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 800px) {
+            html {
+                font-size: 20px;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <h1>Sykkelmafiaens filer</h1>
+        <span>~</span>
+    </header>
+
+    <article class="main">
+        <h2 id="info">Generell info</h2>
+        <p class="mobile">(scroll ned for filene)</p>
+        <p>
+            <strong>Hvor bestille:</strong>
+            <a href="https://stickerapp.no/" target="_blank">StickerApp.no</a>: jeg har handlet både "brune
+            papirklistremerker" og vanlige. God kvalitet, rask levering, litt dyrt.
+            <a href="https://camaloon.com/no/tilpassede-klistremerker/tilpassede-papir-klistremerker" target="_blank">Camaloon</a>:
+            treg levering da jeg testet, men veldig billig.
+
+            Det er billigere å kjøpe store kvanta. Så ta kontakt med meg på DM på Twitter om du bor i Oslo-området, så
+            kan jeg evt samkjøre en bestilling.
+        </p>
+
+        <p>
+            <strong>Filtyper:</strong>
+            Filene nedenfor kommer i flere formater. For trykk er det beste å bruke vektorformatene (PDF eller SVG) om
+            det er støttet, da de kan blåses opp så stort man ønsker uten at det blir kornete. PNG filene er vanlige bildefiler, men jeg
+            har laget de i såpass god oppløsning at de også burde egne seg til trykk opp til relativt store størrelser.
+            Jeg har også inkludert råfilene for de som skulle ønske gjøre endringer.
+
+        </p>
+
+
+        <p>
+            <strong>Materialer:</strong>
+            Vinyl er standarden de fleste plasser, men det er relativt lett å rive av igjen. Da har man i det minste
+            fått sagt sin mening
+            til bilisten.
+            Vil man ha noe som er mer irriterende å fjerne kan papirklistremerker være bra. Papiret er ofte svakere enn
+            limet, så det
+            blir bare strimler i det man river det av, og man må derfor rive av mange små biter. En passende straff
+            mener noen. ;)
+        </p>
+
+        <p>
+            <strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+                                        target="_blank"
+        >Attribution-NonCommercial-ShareAlike 4.0 International</a>, men bare ta kontakt om det skulle være noe.
+        </p>
+
+
+        <h2>Filene</h2>
+        <div class="files">
+            <div class="file">
+                <h3 id="poop-sticker">Poop sticker</h3>
+                <img class="preview" src="poop-sticker/poop_sticker_preview.png" alt="Forhåndsvisning av poop sticker"/>
+                <p>
+                    <strong>Filer:</strong> <a href="poop-sticker/poop_sticker.png">PNG</a>, <a
+                        href="poop-sticker/poop_sticker.pdf">PDF</a>, <a
+                        href="poop-sticker/poop_sticker.svg">SVG</a><br/>
+                    <strong>Uten hashtag:</strong> <a href="poop-sticker/poop_sticker_no_hashtag.png">PNG</a>, <a
+                        href="poop-sticker/poop_sticker_no_hashtag.pdf">PDF</a>, <a
+                        href="poop-sticker/poop_sticker_no_hashtag.svg">SVG</a><br/>
+                    <strong>Illustrator arbeidsfil:</strong> <a href="poop-sticker/poop_sticker.ai">AI</a>
+                </p>
+            </div>
+
+            <div class="file">
+                <h3 id="pikk-sticker">Pikk sticker</h3>
+                <img class="preview" src="pikk-sticker/pikk_sticker_preview.png" alt="Forhåndsvisning av pikk sticker"/>
+                <p>
+                    <strong>Filer:</strong> <a href="pikk-sticker/pikk_sticker.png">PNG</a>, <a
+                        href="pikk-sticker/pikk_sticker.pdf">PDF</a>, <a
+                        href="pikk-sticker/pikk_sticker.svg">SVG</a><br/>
+                    <strong>Uten hashtag:</strong> <a href="pikk-sticker/pikk_sticker_no_hashtag.png">PNG</a>, <a
+                        href="pikk-sticker/pikk_sticker_no_hashtag.pdf">PDF</a>, <a
+                        href="pikk-sticker/pikk_sticker_no_hashtag.svg">SVG</a><br/>
+                    <strong>English:</strong> <a href="pikk-sticker/en/dick_sticker.png">PNG</a>, <a
+                        href="pikk-sticker/en/dick_sticker.pdf">PDF</a>, <a
+                        href="pikk-sticker/en/dick_sticker.svg">SVG</a><br/>
+                    <strong>Illustrator arbeidsfil:</strong> <a href="pikk-sticker/pikk_sticker.ai">AI</a>
+                </p>
+            </div>
+
+            <div class="file">
+                <h3 id="price-sign">Prisskilt sykkel</h3>
+                <img class="preview" src="price-sign/bike_price_sign_preview.png"
+                     alt="Forhåndsvisning av prisskilt sykkel"/>
+                <p>
+                    <strong>Filer:</strong> <a href="price-sign/bike_price_sign.png">PNG</a>, <a
+                        href="price-sign/bike_price_sign.pdf">PDF</a>, <a
+                        href="price-sign/bike_price_sign.svg">SVG</a><br/>
+                    <strong>Illustrator arbeidsfil:</strong> <a href="price-sign/price_sign.ai">AI</a>
+                </p>
+            </div>
+
+            <div class="file">
+                <h3 id="price-sign-ruter">Prisskilt Ruter</h3>
+                <img class="preview" src="price-sign/ruter_price_sign_preview.png"
+                     alt="Forhåndsvisning av prisskilt Ruter"/>
+                <p>
+                    <strong>Filer:</strong> <a href="price-sign/ruter_price_sign.png">PNG</a>, <a
+                        href="price-sign/ruter_price_sign.pdf">PDF</a>, <a
+                        href="price-sign/ruter_price_sign.svg">SVG</a><br/>
+                    <strong>Illustrator arbeidsfil:</strong> <a href="price-sign/price_sign.ai">AI</a>
+                </p>
+            </div>
+        </div>
+    </article>
+
+
+</div>
+</body>
+</html>
