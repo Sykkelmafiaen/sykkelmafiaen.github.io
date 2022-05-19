@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appell for trafikksikkerhet</title>
+    <meta property="og:title" content="Appell for trafikksikkerhet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sykkelmafiaen.github.io/appell/" />
+    <meta property="og:image" content="https://sykkelmafiaen.github.io/appell/og_img.png" />
+    <meta property="og:description" content="Filer og ressurser til appellen for trafikksikkerhet for syklende og gående" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* lora-700italic - latin */
+        @font-face {
+            font-family: 'Lora';
+            font-style: italic;
+            font-weight: 700;
+            src: local(''),
+            url('/fonts/lora-v23-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/lora-v23-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+        /* open-sans-regular - latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local(''),
+            url('/fonts/open-sans-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/open-sans-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+        /* open-sans-800 - latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            src: local(''),
+            url('/fonts/open-sans-v28-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/open-sans-v28-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        }
+
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background: #ffffff;
+            color: #000000;
+            border-top: 20px solid #000000;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            font-style: italic;
+            margin: 0.5rem 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p a {
+            color: #000000;
+            font-weight: bold;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        p a::before {
+            content: "";
+            background-color: #000000;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            z-index: -1;
+            transition: height 0.3s ease-in-out;
+        }
+
+        p a:hover {
+            color: #ffffff;
+        }
+
+        p a:hover::before {
+            height: 100%;
+        }
+
+        .wrapper {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img.preview {
+            max-width: 150px;
+        }
+
+        header {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        header > span {
+            font-size: 30px;
+        }
+
+        .files {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .file {
+            min-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 800px) {
+            html {
+                font-size: 20px;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <h1>Appell for trafikksikkerhet for syklende og gående</h1>
+        <span>~</span>
+    </header>
+
+    <article class="main">
+        <h2 id="info">Info</h2>
+        <p>
+            <strong>Tidspunkt:</strong>
+            25. mai kl. 18-19
+            <br>
+            <strong>Sted:</strong>
+            Eidsvolls plass, foran Stortinget
+        </p>
+        <p>
+            <strong>Facebook event:</strong>
+            <a href="https://www.facebook.com/events/395302492472913">https://www.facebook.com/events/395302492472913</a><br>
+            Der postes det jevnlige oppdateringer, så følg med der. Del også gjerne facebook eventet slik at så mange som mulig ser det.
+        </p>
+
+
+        <h2>Materiale</h2>
+        <p>
+        <strong>A4 med to plakater:</strong>
+        <a href="sykkelmarkering.pdf">Last ned PDF</a>
+        </p>
+        <a href="sykkelmarkering.pdf"><img src="preview_1.png" alt="Dobbel print A4" /></a>
+
+
+    </article>
+
+
+</div>
+</body>
+</html>
